@@ -27,7 +27,7 @@ docker run -d \
   -v $(pwd)/mongo:/data/db \
   -e MONGO_INITDB_ROOT_USERNAME=tu_usuario \
   -e MONGO_INITDB_ROOT_PASSWORD=tu_contraseña \
-  --name mogodb mongodb
+  --name mongodb mongodb
 ```
 
 Alternativa con archivo `.env` y docker-compose:
