@@ -1,10 +1,10 @@
 # MongoDB Dockerfile
 
 Este directorio contiene un `Dockerfile` construido a partir de la configuración
-en `docker-compose.yml` y la imagen oficial `mongo:6.0.6`.
+en `docker-compose.yml` y la imagen oficial `mongo:8.0`.
 
 Arquitectura y decisiones:
-- Se usa `FROM mongo:6.0.6` para mantener el mismo runtime que en el
+- Se usa `FROM mongo:8.0` para mantener el mismo runtime que en el
   `docker-compose.yml`.
 - No se sobrescribe `ENTRYPOINT` ni `CMD` para conservar el comportamiento de
   inicialización oficial (scripts en `/docker-entrypoint-initdb.d`).
